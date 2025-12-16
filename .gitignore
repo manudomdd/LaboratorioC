@@ -1,0 +1,19 @@
+# --- Archivos de compilación (Basura) ---
+*.o
+*.obj
+*.so
+*.a
+*.exe
+
+# --- Carpetas de Build de Qt Creator ---
+build-*/
+build/
+
+# --- Configuración de usuario (Privado) ---
+*.pro.user
+*.pro.user.*
+CMakeLists.txt.user
+
+# --- Archivos del sistema ---
+.DS_Store
+Thumbs.db
