@@ -1,0 +1,3 @@
+/home/manu/Escritorio/LaboratorioC/build-TiposVariables-Desktop-Debug/CMakeFiles/TiposVariables.dir
+/home/manu/Escritorio/LaboratorioC/build-TiposVariables-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/manu/Escritorio/LaboratorioC/build-TiposVariables-Desktop-Debug/CMakeFiles/rebuild_cache.dir
