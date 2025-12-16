@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/TiposVariables.dir/main.cpp.o -o TiposVariables 
