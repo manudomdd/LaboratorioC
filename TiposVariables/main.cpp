@@ -4,7 +4,7 @@
 #include <iostream>
 
 /**
- *Opcional si nos queremos quitar de usar std
+ *Opcional si nos queremos quitar de usar std, no es necesario.
  */
 using namespace std;
 
