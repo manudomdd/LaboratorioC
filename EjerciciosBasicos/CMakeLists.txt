@@ -13,4 +13,6 @@ add_executable(Ejercicios
     positivonegativo.h
     calculararea.cpp
     calculararea.h
+    contador1_100.cpp
+    contador1_100.h
 )
