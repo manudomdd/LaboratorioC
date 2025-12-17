@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(Ejercicios LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(Ejercicios
+    main.cpp
+    puedejubilarse.cpp  # Si lo pusiste en carpeta, pon la ruta
+    puedejubilarse.h
+    positivonegativo.cpp
+    positivonegativo.h
+)
