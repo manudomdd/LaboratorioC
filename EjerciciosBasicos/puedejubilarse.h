@@ -8,4 +8,4 @@ public:
     void calculo();
 };
 
-#endif // PUEDEJUBILARSE_H
+#endif

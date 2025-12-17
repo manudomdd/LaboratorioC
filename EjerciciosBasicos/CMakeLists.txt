@@ -11,4 +11,6 @@ add_executable(Ejercicios
     puedejubilarse.h
     positivonegativo.cpp
     positivonegativo.h
+    calculararea.cpp
+    calculararea.h
 )
