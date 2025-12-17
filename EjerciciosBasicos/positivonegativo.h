@@ -9,4 +9,4 @@ public:
     void calcularSigno();
 };
 
-#endif // POSITIVONEGATIVO_H
+#endif
