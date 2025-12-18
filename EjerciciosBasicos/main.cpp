@@ -3,13 +3,14 @@
 #include "positivonegativo.h"
 #include "calculararea.h"
 #include "contador1_100.h"
-
-PuedeJubilarse jubilacion;
-PositivoNegativo positivoNegativo;
-CalcularArea calcularArea;
-Contador1_100 contador;
+#include "analisistemperaturas.h"
 
 int main() {
+    PuedeJubilarse jubilacion;
+    PositivoNegativo positivoNegativo;
+    CalcularArea calcularArea;
+    Contador1_100 contador;
+    AnalisisTemperaturas analisisTemperaturas;
     int option;
 
     do {
@@ -18,7 +19,8 @@ int main() {
         std::cout << "2. Calculo de jubilacion" << std::endl;
         std::cout << "3. Calculo de areas" << std::endl;
         std::cout << "4. Contar del 1 al 100" << std::endl;
-        std::cout << "5. Salir" << std::endl;
+        std::cout << "5. Temperaturas" << std::endl;
+        std::cout << "6. Salir" << std::endl;
         std::cout << "Elija una opcion: ";
         std::cin >> option;
 
@@ -35,13 +37,29 @@ int main() {
             case 4:
                 contador.contar();
                 break;
-            case 5:
+            case 5: {
+                int election;
+                std::cout << "Elige opcion: " << std::endl;
+                std::cout << "1. Introducir." << std::endl;
+                std::cout << "2. Mostrar maxima" << std::endl;
+                std::cout << "3. Mostrar minima" << std::endl;
+                std::cin >> election;
+                if (election == 1) {
+                    analisisTemperaturas.introducir();
+                } else if (election == 2) {
+                    analisisTemperaturas.calcularMaxima();
+                } else if (election == 3) {
+                    analisisTemperaturas.calcularMinima();
+                }
+                break;
+            }
+            case 6:
                 std::cout << "Saliendo..." << std::endl;
                 break;
             default:
                 std::cout << "Opcion no valida." << std::endl;
         }
-    } while (option != 5);
+    } while (option != 6);
 
     return 0;
 }

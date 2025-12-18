@@ -15,4 +15,6 @@ add_executable(Ejercicios
     calculararea.h
     contador1_100.cpp
     contador1_100.h
+    analisistemperaturas.cpp
+    analisistemperaturas.h
 )
