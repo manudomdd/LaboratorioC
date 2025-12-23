@@ -5,6 +5,7 @@
 #include "contador1_100.h"
 #include "analisistemperaturas.h"
 #include "calificaciones.h"
+#include "tarea.h"
 
 
 int main() {
@@ -14,6 +15,7 @@ int main() {
     Contador1_100 contador;
     AnalisisTemperaturas analisisTemperaturas;
     Calificaciones calificaciones;
+    GestorTareas gestor;
 
     int option;
 
@@ -25,7 +27,8 @@ int main() {
         std::cout << "4. Contar del 1 al 100" << std::endl;
         std::cout << "5. Temperaturas" << std::endl;
         std::cout << "6. Mostrar calificaciones" << std::endl;
-        std::cout << "7. Salir" << std::endl;
+        std::cout << "7. Tareas." << std::endl;
+        std::cout << "8. Salir" << std::endl;
         std::cout << "Elija una opcion: ";
         std::cin >> option;
 
@@ -76,6 +79,21 @@ int main() {
                 }
                 break;
             case 7:
+                int eleccion;
+                do {
+                    std::cout<<"Elige opcion"<<std::endl;
+                    std::cout<<"1. Añadir tarea"<<std::endl;
+                    std::cout<<"2. Mostrar tareas"<<std::endl;
+                    std::cout<<"3. Volver al menu"<<std::endl;
+                    std::cin>>eleccion;
+                    if (eleccion == 1) {
+                        gestor.agregarTarea();
+                    } else if (eleccion == 2) {
+                        gestor.mostrarTareas();
+                    }
+                } while (eleccion != 3);
+                break;
+            case 8:
                 std::cout << "Saliendo..." << std::endl;
                 break;
             default:

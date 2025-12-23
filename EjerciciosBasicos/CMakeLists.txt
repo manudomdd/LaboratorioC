@@ -19,4 +19,7 @@ add_executable(Ejercicios
     analisistemperaturas.h
     calificaciones.cpp
     calificaciones.h
+    tarea.cpp
+    tarea.h
+
 )
